@@ -71,3 +71,38 @@ extends: [
     '@vue/typescript'
 ]
 ```
+
+## Known issues and errors
+
+While testing these rulesets i have found an error that i had a hard time finding the proper solution for, because the error message was kind of vague.
+
+### TypeError: Cannot read property 'typeAnnotation' of undefined
+
+When this error happens, it looks like it is because there is interfaces in the project, that the rulesets are implemented on, has functions that doesn't have a return type.
+eg.
+```js
+interface Overlay {
+    hide();
+}
+```
+
+Will fail with this error:
+```sh
+ERROR  TypeError: Cannot read property 'typeAnnotation' of undefined
+Occurred while linting C:\projects\_personal\sanTest1\src\core\offcanvas-overlay\overlayOrchestrator.ts:2
+```
+
+to fix this error simply add the expected return type of the method eg.
+```js
+interface Overlay {
+    hide(): Promise<void>;
+}
+```
+
+then run the linter again and it should work.
+And when run with lint --fix, or just lint in some cases, the code should be refactored to look like this:
+```js
+interface Overlay {
+    hide: () => Promise<void>;
+}
+```
