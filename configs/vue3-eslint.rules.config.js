@@ -42,9 +42,9 @@ module.exports = {
             'ignores': [],
             'allowEmptyLines': false
         }],
-        'vue/one-component-per-file': ['error'],
+        // 'vue/one-component-per-file': ['error'], // TODO: not in current stable version, comes in v7
         'vue/require-default-prop': ['error'],
-        'vue/require-explicit-emits': ['error'],
+        // 'vue/require-explicit-emits': ['error'], // TODO: not in current stable version, comes in v7
         'vue/require-prop-types': ['error'],
         'vue/singleline-html-element-content-newline': ['error', {
             'ignoreWhenNoAttributes': false,
@@ -117,9 +117,9 @@ module.exports = {
             'registeredComponentsOnly': true,
             'ignores': []
         }],
-        'vue/html-comment-content-newline': ['warn'],
-        'vue/html-comment-content-spacing': ['warn'],
-        'vue/html-comment-indent': ['warn'],
+        // 'vue/html-comment-content-newline': ['warn'], // TODO: not in current stable version, comes in v7
+        // 'vue/html-comment-content-spacing': ['warn'], // TODO: not in current stable version, comes in v7
+        // 'vue/html-comment-indent': ['warn'], // TODO: not in current stable version, comes in v7
         'vue/match-component-file-name': ['error', {
             'extensions': [
                 'jsx',
@@ -127,30 +127,30 @@ module.exports = {
             ],
             'shouldMatchCase': true
         }],
-        'vue/no-duplicate-attr-inheritance': ['warn'],
-        'vue/no-empty-component-block': ['error'],
-        'vue/no-multiple-objects-in-class': ['warn'],
+        // 'vue/no-duplicate-attr-inheritance': ['warn'], // TODO: not in current stable version, comes in v7
+        // 'vue/no-empty-component-block': ['error'], // TODO: not in current stable version, comes in v7
+        // 'vue/no-multiple-objects-in-class': ['warn'], // TODO: not in current stable version, comes in v7
         'vue/no-reserved-component-names': ['error'],
         'vue/no-static-inline-styles': ['warn'],
         'vue/no-unsupported-features': ['warn', {
             'version': '^3.0.0-0'
         }],
-        'vue/no-unused-properties': ['warn', {
+        /*'vue/no-unused-properties': ['warn', { // TODO: not in current stable version, comes in v7
             'groups': [
                 'props',
                 'data',
                 'computed'
             ]
-        }],
-        'vue/no-useless-mustaches': ['error'],
-        'vue/no-useless-v-bind': ['error'],
+        }],*/
+        // 'vue/no-useless-mustaches': ['error'], // TODO: not in current stable version, comes in v7
+        // 'vue/no-useless-v-bind': ['error'], // TODO: not in current stable version, comes in v7
         'vue/padding-line-between-blocks': ['warn', 'always'],
-        'vue/v-on-function-call': ['error', 'always'],
+        'vue/v-on-function-call': ['error', 'never'],
         // endregion
 
         // region Extension Rules
         'vue/eqeqeq': ['warn', 'smart'],
-        'vue/no-extra-parens': ['warn'],
+        // 'vue/no-extra-parens': ['warn'], // TODO: not in current stable version, comes in v7
         'vue/no-irregular-whitespace': ['warn']
 
         // endregion
