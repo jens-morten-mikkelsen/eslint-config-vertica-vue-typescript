@@ -24,6 +24,7 @@
         }],
         // '@typescript-eslint/no-confusing-non-null-assertion': ['warn'], // Not in 2.34.0
         // '@typescript-eslint/no-implicit-any-catch': ['warn'], // Not in 2.34.0
+        '@typescript-eslint/no-inferrable-types': 'off',
         // '@typescript-eslint/no-invalid-void-type': ['warn'], // Not in 2.34.0
         '@typescript-eslint/no-parameter-properties': ['warn'],
         // '@typescript-eslint/no-require-imports': ['warn'], // TODO: Decide if this should be used or not. If it should be used we have to use file-loader, and possibly webpack
@@ -61,7 +62,7 @@
             // rules specifically for TypeScript and vue
             'files': ['*.ts', '*.tsx', '*.vue'],
             'rules': {
-                /*'@typescript-eslint/explicit-function-return-type': ['warn', {
+                '@typescript-eslint/explicit-function-return-type': ['warn', {
                     // if true, only functions which are part of a declaration will be checked
                     allowExpressions: false,
                     // if true, type annotations are also allowed on the variable of a function expression rather than on the function directly
@@ -70,7 +71,7 @@
                     allowHigherOrderFunctions: true,
                     // if true, concise arrow functions that start with the void keyword will not be checked
                     allowConciseArrowFunctionExpressionsStartingWithVoid: true
-                }],*/
+                }],
                 '@typescript-eslint/explicit-member-accessibility': ['warn']
             }
         },
@@ -79,6 +80,29 @@
             'files': ['*.ts', '*.tsx', '*.js', '*.jsx'],
             'rules': {
                 '@typescript-eslint/no-invalid-this': ['error']
+            }
+        },
+        {
+            // rules specifically for Typescript and Javascript files
+            'files': [
+                'css/**/*.ts',
+                'css/**/*.js',
+                'sass/**/*.ts',
+                'sass/**/*.js',
+                'scss/**/*.ts',
+                'scss/**/*.js',
+                'style/**/*.ts',
+                'style/**/*.js',
+                'styles/**/*.ts',
+                'styles/**/*.js',
+                'styling/**/*.ts',
+                'styling/**/*.js',
+                'less/**/*.ts',
+                'less/**/*.js'
+            ],
+            'rules': {
+                '@typescript-eslint/no-var-requires': 'off',
+                '@typescript-eslint/no-unused-vars': 'off'
             }
         }
     ]

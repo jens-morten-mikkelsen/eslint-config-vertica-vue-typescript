@@ -1,11 +1,8 @@
 {
   "name": "eslint-config-vertica-vue-typescript",
-  "version": "0.3.3",
+  "version": "0.3.5",
   "description": "eslint config for using vue and typescript",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Jens Morten Mikkelsen",
   "license": "ISC",
   "peerDependencies": {
@@ -26,6 +23,12 @@
   },
   "keywords": [
     "eslint",
-    "eslint-config"
+    "eslint-config",
+    "eslint-plugin-vue",
+    "eslint-typescript",
+    "eslint-vue",
+    "typescript",
+    "vue",
+    "vue-typescript"
   ]
 }
