@@ -10,7 +10,7 @@
   "license": "ISC",
   "peerDependencies": {
     "eslint": "^6",
-    "eslint-plugin-vue": "~7.x",
+    "eslint-plugin-vue": "next",
     "@typescript-eslint/eslint-plugin": "^2",
     "@typescript-eslint/parser": "^2",
     "@vue/eslint-config-typescript": "^5",
