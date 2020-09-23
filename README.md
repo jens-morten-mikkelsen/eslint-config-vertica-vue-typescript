@@ -3,6 +3,7 @@
 > eslint-config for Vue (2 and 3) with Typescript
 
 See [eslint-plugin-vue](https://eslint.vuejs.org/rules/) for available rules for Vue.
+
 See [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules) for available rules for Typescript.
 
 I recommend that you use this package on projects that are setup using vue-cli, however it should work on any projects.
