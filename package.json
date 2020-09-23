@@ -1,10 +1,10 @@
 {
   "name": "eslint-config-vertica-vue-typescript",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "eslint config for using vue and typescript",
   "main": "index.js",
   "author": "Jens Morten Mikkelsen",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jens-morten-mikkelsen/eslint-config-vertica-vue-typescript.git"
