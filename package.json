@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vertica-vue-typescript",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "eslint config for using vue and typescript",
   "main": "index.js",
   "author": "Jens Morten Mikkelsen",
